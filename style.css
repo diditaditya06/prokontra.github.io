@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pembahasan{
+    height: 150px;
+    background-color: blue;
+}
+
+.pro{
+    background-color: aqua;
+    border: 2px solid black;
+    height: 100vh;
+}
+.kontra{
+    background-color: aqua;
+    border: 2px solid black;
+    height: 100vh;
+}
+.hasil{
+    height: 150px;
+    background-color: black;
+    color: white;
+}
+h1.judul{
+    text-align: center;
+}
+h1{
+    text-align: left;
+}
+
+
+@media screen and (max-width: 360px) {
+    .col-pro{
+        width: 100%;
+    }
+    .row{
+        margin: 2.5px;
+        width:100%;            
+        display:block;
+    }
+    
+    [class*="col-pro,col-kontra"] {
+        
+        display:inline-block;
+        background:red;
+        height:100px;
+    }
+}
